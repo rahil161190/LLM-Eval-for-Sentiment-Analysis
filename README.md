@@ -42,6 +42,38 @@ The goal was to design a unified evaluation pipeline that:
 
 ---
 
+## 💡 Hands‑On Experience Gained
+Through this project, I developed practical skills in:
+- **Generative AI Evaluation** – Running multiple LLMs on the same dataset and comparing their outputs  
+- **LLM Integration** – Combining Groq‑hosted and Hugging Face models into one unified workflow  
+- **Prompt Design** – Crafting clear, structured prompts to enforce consistent JSON outputs  
+- **Model Management** – Building a custom Hugging Face model manager for caching, quantization, and memory control  
+- **Dataset Preparation** – Sampling and converting SST‑2 data into Opik format for reproducible evaluation  
+- **Error Handling & Debugging** – Managing issues like failed responses and resource constraints  
+- **Evaluation Metrics** – Applying precision, recall, F1, ROUGE, and BERTScore to measure model quality  
+- **Experiment Logging** – Using Opik to track results, errors, and traces for observability  
+
+---
+
+## 🛠️ Tech Stack
+- **Python 3.12** – Core programming language for pipeline logic  
+- **PyTorch** – Deep learning framework for inference  
+- **Transformers (Hugging Face)** – Pre‑trained models and tokenizers  
+- **Groq API (OpenAI‑compatible)** – Hosted Llama models for free‑tier inference  
+- **Opik** – Evaluation and observability framework (dataset conversion, trace logging)  
+- **Datasets (Hugging Face)** – Loading SST‑2 benchmark dataset  
+- **BitsAndBytes** – Quantization for memory optimization  
+- **Accelerate** – Streamlined inference across devices  
+- **Rouge‑Score & BERTScore** – Metrics for text evaluation  
+- **Pandas & tqdm** – Data handling and progress visualization  
+
+---
+## 📈 Impact
+By completing this project, I strengthened my ability to:
+- Compare models across providers in a fair, transparent way  
+- Handle practical challenges like output parsing and evaluation consistency  
+- Design reproducible pipelines that can be extended to other NLP tasks  
+
 ## Overall
 The pipeline highlighted:
 - The strengths of Groq models for free, fast inference.
